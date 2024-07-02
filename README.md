@@ -82,9 +82,13 @@ Duplicates are removed based on `TripID`, `MMSI`, `ID`, and `time`. Data is sort
     source venv/bin/activate
     ```
 
+2. Update your pip
+   ```sh
+   pip3 install --upgrade pip
+   ```
 2. Install the required packages:
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 ## Running the Application
