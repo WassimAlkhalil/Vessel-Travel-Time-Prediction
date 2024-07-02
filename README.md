@@ -71,6 +71,9 @@ The codebase includes functionalities for managing and processing maritime trip 
 Duplicates are removed based on `TripID`, `MMSI`, `ID`, and `time`. Data is sorted by `TripID` and `time` to ensure chronological order. The code interpolates `COG` and `TH` to handle circular data, validates geographic coordinates, and processes `SOG` data to identify outliers. The cleaned data is saved into separate CSV files for each trip.
 
 ## Installation
+### To clone the project
+    git clone git@collaborating.tuhh.de:e16/courses/software-development/ss24/group01.git
+
 
 ### Setting Up the Environment
 1. Create and activate a virtual environment:
@@ -86,6 +89,7 @@ Duplicates are removed based on `TripID`, `MMSI`, `ID`, and `time`. Data is sort
 
 ## Running the Application
 Run this commant to install PyQt5:
+
 ```sh
 pip3 install PyQt5
 ```
@@ -118,6 +122,5 @@ The CI pipeline automates the setup, testing, and deployment processes. It perfo
 
 1. **Setup**: Installs necessary dependencies and tools.
 2. **Testing**: Runs automated tests to ensure code quality and functionality.
-3. **Deployment**: Deploys the application if all tests pass successfully.
 
 This README provides a comprehensive guide to the Ship Voyages dataset, including data structure, processing, setup instructions, and documentation of the application's functionalities.
