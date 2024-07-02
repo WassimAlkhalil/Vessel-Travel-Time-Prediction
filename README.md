@@ -72,7 +72,7 @@ Duplicates are removed based on `TripID`, `MMSI`, `ID`, and `time`. Data is sort
 
 ## Installation
 ### To clone the project
-    git clone git@collaborating.tuhh.de:e16/courses/software-development/ss24/group01.git
+    git clone git@github.com:WassimAlkhalil/Vessel-Travel-Time-Prediction.git
 
 
 ### Setting Up the Environment
