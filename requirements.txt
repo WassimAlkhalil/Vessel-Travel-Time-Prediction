@@ -1,0 +1,25 @@
+# Required external libraries
+dash                          # Dash framework for building analytical web applications
+dash-bootstrap-components     # Bootstrap components for Dash
+plotly                        # Plotly for interactive graphing
+pandas                        # Pandas for data manipulation and analysis
+scipy                         # SciPy for scientific computing
+requests                      # Requests for HTTP requests
+numpy                         # NumPy for numerical operations
+scikit-learn                  # Scikit-learn for machine learning (includes sklearn functionalities)
+geopy                         # Geopy for geocoding
+haversine                     # Haversine formula for calculating distances between points on Earth
+xgboost                       # XGBoost for gradient boosting
+searoute                      # SeaRoute for maritime route calculations
+joblib                        # Joblib for efficient serialization of Python objects
+folium                        # Folium for creating interactive maps
+pytest                        # Pytest for testing frameworks
+
+# Built-in Python Standard Library modules (do not require installation)
+# shutil                       # Part of the standard library
+# time                         # Part of the standard library
+# math                         # Part of the standard library
+# webbrowser                   # Part of the standard library
+# threading                    # Part of the standard library
+# sys                          # Part of the standard library
+# os                           # Part of the standard library
