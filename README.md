@@ -71,8 +71,12 @@ The codebase includes functionalities for managing and processing maritime trip 
 Duplicates are removed based on `TripID`, `MMSI`, `ID`, and `time`. Data is sorted by `TripID` and `time` to ensure chronological order. The code interpolates `COG` and `TH` to handle circular data, validates geographic coordinates, and processes `SOG` data to identify outliers. The cleaned data is saved into separate CSV files for each trip.
 
 ## Installation
-### To clone the project
-    git clone git@github.com:WassimAlkhalil/Vessel-Travel-Time-Prediction.git
+### To clone the project, use one of the following commands:
+#### Using SSH: 
+    git clone git@collaborating.tuhh.de:e16/courses/software-development/ss24/group01.git
+    
+#### Using HTTPS:
+    git clone https://collaborating.tuhh.de/e16/courses/software-development/ss24/group01.git
 
 
 ### Setting Up the Environment
@@ -82,21 +86,28 @@ Duplicates are removed based on `TripID`, `MMSI`, `ID`, and `time`. Data is sort
     source venv/bin/activate
     ```
 
-2. Update your pip
-   ```sh
-   pip3 install --upgrade pip
-   ```
 2. Install the required packages:
     ```sh
-    pip3 install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 ## Running the Application
+First, upgrade your pip: 
+```sh
+pip install --upgrade pip
+```
+
 Run this commant to install PyQt5:
 
 ```sh
 pip3 install PyQt5
 ```
+
+#### Note: If this package still missing after installing PyQt5, try to install it manually.
+```sh
+pip install PyQtWebEngine
+```
+
 This command should run separately from the other requirements to avoid memory allocation issue.
 
 To run the application, use the following command:
@@ -117,9 +128,12 @@ To build and run the application using Docker, follow these steps:
     ```
 2. **Run the Docker Container**: This step runs the Docker container using the built image, exposing the application on port 8050.
     ```sh
-    docker run -d -p 8050:8050 --name ship-voyages-container ship-voyages-app
+    docker run --name ship-voyages-container ship-voyages-app
     ```
-After running these commands, the application will be accessible at `http://localhost:8050`. in your web browser.
+Note Extend you storage to avoid memory allocation issue. For example, to extend the memory to 4GB, use the following command:
+
+    docker run --name ship-voyages-container -m 4g ship-voyages-app
+    
 
 ## Continuous Integration (CI)
 The CI pipeline automates the setup, testing, and deployment processes. It performs the following steps:
